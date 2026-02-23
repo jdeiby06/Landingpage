@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primario:blue;
+    --color-secundario:yellow;
+    --color-terciario:aqua;
+    --color--textos:rgb(97, 58, 133);
+    --color--textos-hover:rgb(13, 95, 149);
+    --tamaño--titulo:2.5em ;
+    --tamaño-texto-nav:30px;
+}
+body{
+    font-family: "Roboto",sans-serif;
+}
+
+/* estilos header */
+.header{
+    position: relative;
+    background: url(../img/face1.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color--textos);
+}
+
+.contenedor-nav{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.612);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.contenedor-logo{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    font-size: 30px;
+}
+.contenedor-logo img{
+    height: 40px;
+    
+}
+.nav-header ul{
+    display: flex;
+    list-style: none;
+    gap:30px;
+}
+.nav-header a{
+    text-decoration: none;
+    font-size:var(--tamaño-texto-nav) ;
+    color: var(--color--textos);
+}
+.nav-header a:hover{
+    color: var(--color--textos-hover);
+}
+
+
+/* seciones intermedias */
+
+.contenedor{
+    height: 100vh;
+    background-color: var(--color-secundario);
+    margin: 10px;
+}
