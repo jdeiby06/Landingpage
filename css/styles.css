@@ -7,9 +7,9 @@
 
 :root{
     --color-primario:blue;
-    --color-secundario:rgb(0, 0, 115);
-    --color-terciario:aqua;
-    --color--textos:rgb(97, 58, 133);
+    --color-secundario:rgb(5, 111, 231);
+    --color-terciario:rgb(28, 59, 158);
+    --color--textos:rgb(34, 51, 150);
     --color--textos-hover:rgb(13, 95, 149);
     --tamaño--titulo:2.5em ;
     --tamaño-texto-nav:30px;
@@ -23,7 +23,7 @@ body{
     position: relative;
     background: url(../img/imginventario.jpg) no-repeat center center/cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,5 +75,27 @@ body{
 .contenedor{
     height: 100vh;
     background-color: var(--color-secundario);
-    margin: 10px;
+    margin: 15px;
+    position: relative;
+    
+  
 }
+.contenedor img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+    
+
+.texto{
+    position: absolute;
+    bottom: 10px;   /* distancia desde abajo */
+    left: 20px;     /* distancia desde la izquierda */
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* fondo semi-transparente */
+    padding: 15px;
+    max-width: 600px;
+}
+
