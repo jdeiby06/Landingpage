@@ -1,16 +1,17 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
     
 }
 
 :root{
-    --color-primario:blue;
-    --color-secundario:rgb(5, 111, 231);
-    --color-terciario:rgb(28, 59, 158);
-    --color--textos:rgb(34, 51, 150);
-    --color--textos-hover:rgb(13, 95, 149);
+    --color-primario:rgb(37, 184, 110);
+    --color-secundario:rgb(119, 223, 119);
+    --color-terciario:rgb(24, 121, 185);
+    --color--textos:rgb(255, 255, 255);
+    --color--textos-hover:rgb(24, 121, 185);
     --tamaño--titulo:2.5em ;
     --tamaño-texto-nav:30px;
 }
@@ -21,9 +22,9 @@ body{
 /* estilos header */
 .header{
     position: relative;
-    background: url(../img/imginventario.jpg) no-repeat center center/cover;
+    background: url(../img/Gestion-de-inventarios-Zoho-Inventory.jpg) no-repeat center center/cover;
     background-attachment: fixed;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,7 +40,7 @@ body{
     left:0;
     height: 100px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.612);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,9 +51,14 @@ body{
     align-items: center;
     gap:20px;
     font-size: 30px;
+    color: rgb(13, 29, 124);
 }
 .contenedor-logo img{
-    height: 40px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+    margin-left: 11px;
+
     
 }
 .nav-header ul{
@@ -73,11 +79,11 @@ body{
 /* seciones intermedias */
 
 .contenedor{
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--color-secundario);
-    margin: 15px;
     position: relative;
-    
+    width: 100%;
+    padding: 10px;
   
 }
 .contenedor img{
@@ -85,17 +91,34 @@ body{
     height: 100%;
     object-fit: cover;
     display: block;
-}
-
     
+}
 
 .texto{
     position: absolute;
-    bottom: 10px;   /* distancia desde abajo */
-    left: 20px;     /* distancia desde la izquierda */
+    bottom: 10px;  
+    left: 10px;  
     color: white;
-    background: rgba(0, 0, 0, 0.5); /* fondo semi-transparente */
-    padding: 15px;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
     max-width: 600px;
 }
 
+.footer{
+    background-color: var(--color-primario);
+    color: var(--color--textos);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: row-reverse;
+}
+
+.footer img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    margin-left: 11px;
+    align-self: flex-end;
+    
+    
+}
