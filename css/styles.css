@@ -7,8 +7,8 @@
 }
 
 :root{
-    --color-primario:rgb(37, 184, 110);
-    --color-secundario:rgb(119, 223, 119);
+    --color-primario:rgb(53, 159, 173);
+    --color-secundario:rgb(77, 143, 206);
     --color-terciario:rgb(24, 121, 185);
     --color--textos:rgb(255, 255, 255);
     --color--textos-hover:rgb(24, 121, 185);
@@ -51,7 +51,7 @@ body{
     align-items: center;
     gap:20px;
     font-size: 30px;
-    color: rgb(13, 29, 124);
+    color: rgb(143, 158, 248);
 }
 .contenedor-logo img{
     height: 90px;
@@ -79,11 +79,10 @@ body{
 /* seciones intermedias */
 
 .contenedor{
-    min-height: 100vh;
     background-color: var(--color-secundario);
     position: relative;
     width: 100%;
-    padding: 10px;
+    padding: 13px;
   
 }
 .contenedor img{
@@ -96,8 +95,8 @@ body{
 
 .texto{
     position: absolute;
-    bottom: 10px;  
-    left: 10px;  
+    bottom: 13px;  
+    left: 13px;  
     color: white;
     background: rgba(0, 0, 0, 0.5); 
     padding: 10px;
@@ -108,15 +107,16 @@ body{
     background-color: var(--color-primario);
     color: var(--color--textos);
     display: flex;
-    justify-content: space-between;
     padding: 20px;
-    flex-direction: row-reverse;
+    gap: 2em;
+    flex-direction: row;
+    justify-content: center;
     
     
     
 }
 
-.footer img{
+.footer img{ 
     height: 70px;
     width: 70px;
     border-radius: 50px;
